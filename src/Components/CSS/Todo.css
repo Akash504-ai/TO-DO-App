@@ -1,0 +1,108 @@
+/* ./CSS/Todo.css */
+
+.todo {
+  max-width: 480px;
+  margin: 80px auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.todo-header {
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.todo-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-list li {
+  background-color: #f7f9fb;
+  padding: 12px 18px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.todo-list li:hover {
+  background-color: #eaf3ff;
+}
+
+.todo-list svg {
+  color: #e74c3c;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.todo-list svg:hover {
+  transform: scale(1.2);
+}
+
+.todo-add {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.todo-input {
+  flex: 1;
+  padding: 12px;
+  border: 2px solid #dcdfe3;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.todo-input:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+.todo-add-btn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 0 16px;
+  border-radius: 10px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.todo-add-btn:hover {
+  background-color: #2980b9;
+}
+
+.removeBtn {
+  background: transparent;      /* Transparent background */
+  border: none;                 /* No border */
+  cursor: pointer;              /* Pointer cursor on hover */
+  color: #e74c3c;               /* Red color for delete icon */
+  padding: 4px;                 /* Optional spacing */
+  display: flex;                /* Center the icon inside */
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, color 0.3s ease;
+}
+
+.removeBtn:hover {
+  transform: scale(1.2);        /* Slight zoom on hover */
+  color: #c0392b;               /* Darker red on hover */
+}

@@ -1,0 +1,15 @@
+/* index.css */
+
+/* 1. CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 2. Apply a consistent font and background color */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #29313F;
+}
+
